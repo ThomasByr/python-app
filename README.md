@@ -45,7 +45,7 @@ git clone <your-repository-url>
 cd <your-repository-name>
 ```
 
-You can create and activate a conda environment with the following commands (make sure to give it a name in [environment.yml](environment.yml)]) :
+You can create and activate a conda environment with the following commands (make sure to give it a name in [environment.yml](environment.yml)) :
 
 ```bash
 # Creates environment and install dependencies
