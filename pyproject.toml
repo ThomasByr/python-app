@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "python-app"
+version = "0.0.1"
+authors = [
+  { name="ThomasByr", email="tbouyer2000@gmail.com" },
+]
+description = "Description"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+[tool.hatch.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.hatch.build]
+include = [
+  "pkg/*.py",
+  "/tests",
+  "README.md",
+  "LICENSE.md",
+  "CHANGELOG.md",
+]
+exclude = [
+  "*.json",
+  "pkg/_compat.py",
+]
+
+[project.optional-dependencies]
+dev = [
+  "build",
+  "twine",
+  "pytest",
+  "pylint",
+  "yapf",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ThomasByr/python-app"
+"Bug Tracker" = "https://github.com/ThomasByr/python-app/issues"
