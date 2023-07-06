@@ -1,0 +1,7 @@
+# note : all dependencies are locked to a specific version
+#        to ensure reproducibility of the environment ;
+#        exceptions are made for some minor versions
+
+termcolor         == 2.3.*     # colored output
+typing-extensions == 4.6.*     # typing_extensions module
+python-dotenv     == 1.0.*     # load environment variables from .env file
