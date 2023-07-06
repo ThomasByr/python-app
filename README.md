@@ -45,12 +45,12 @@ git clone <your-repository-url>
 cd <your-repository-name>
 ```
 
-You can create and activate a conda environment with the following commands :
+You can create and activate a conda environment with the following commands (make sure to give it a name in [environment.yml](environment.yml)]) :
 
 ```bash
 # Creates environment and install dependencies
 conda env create -f environment.yml -y
-conda activate default
+conda activate <name>
 ```
 
 Finally, run the app in the background with `nohup` and `tee` :
@@ -205,7 +205,13 @@ Please read the [changelog](changelog.md) file for the full history !
 
 **TODO** (first implementation version)
 
+- [x] TODO 1
+- [ ] TODO 2
+
 **Known Bugs** (latest fix)
+
+- ~~BUG 1~~ (fixed in v0.1)
+- BUG 2
 
 ## 🎨 Logo and Icons
 
