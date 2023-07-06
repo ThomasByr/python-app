@@ -37,10 +37,12 @@ This repository is a template for a python app. It is meant to be used as a star
 
 You do not explicitly need a conda environment for the bot to run. But it is always recommended nontheless, especially because the next LTS of Ubuntu won't let users pip-install anything without a virtual environment. At the time of writing, this app `python >= 3.10` to run.
 
+First, [🔗 generate](https://github.com/ThomasByr/python-app/generate) a new repository from this template. Then, clone it and `cd` into it :
+
 ```bash
-# Clone the repository
-git clone https://github.com/ThomasByr/python-app.git
-cd python-app
+# Clones the repository
+git clone <your-repository-url>
+cd <your-repository-name>
 ```
 
 You can create and activate a conda environment with the following commands :
