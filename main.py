@@ -38,8 +38,8 @@ import os
 import sys
 
 os.environ['DEBUG'] = 'False'
-if sys.version_info < (3, 10):
-  raise RuntimeError('This program requires Python 3.10 or later')
+if sys.version_info < (3, 11):
+  raise RuntimeError('This program requires Python 3.11 or later')
 
 from src import *
 
