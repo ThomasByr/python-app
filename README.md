@@ -35,7 +35,7 @@ This repository is a template for a python app. It is meant to be used as a star
 >
 > Please note we do not officially support Windows or MacOS, but we do provide some instructions for those who want to use it on these platforms.
 
-You do not explicitly need a conda environment for the bot to run. But it is always recommended nontheless, especially because the next LTS of Ubuntu won't let users pip-install anything without a virtual environment. At the time of writing, this app `python >= 3.10` to run.
+You do not explicitly need a conda environment for the bot to run. But it is always recommended nontheless, especially because the next LTS of Ubuntu won't let users pip-install anything without a virtual environment. At the time of writing, this app `python >= 3.11` to run.
 
 First, [🔗 generate](https://github.com/ThomasByr/python-app/generate) a new repository from this template. Then, clone it and `cd` into it :
 
