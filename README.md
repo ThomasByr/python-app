@@ -7,7 +7,7 @@
 [![GitHub latest commit](https://badgen.net/github/last-commit/ThomasByr/python-app)](https://gitHub.com/ThomasByr/python-app/commit/)
 [![Maintenance](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://GitHub.com/ThomasByr/python-app/graphs/commit-activity)
 
-[![Python Package using Conda](https://github.com/ThomasByr/python-app/actions/workflows/python-package-conda.yml/badge.svg)](https://github.com/ThomasByr/python-app/actions/workflows/python-package-conda.yml)
+[![Python Package Conda&Hatch](https://github.com/ThomasByr/python-app/actions/workflows/python-package-conda.yml/badge.svg)](https://github.com/ThomasByr/python-app/actions/workflows/python-package-conda.yml)
 [![GitHub version](https://badge.fury.io/gh/ThomasByr%2Fpython-app.svg)](https://github.com/ThomasByr/python-app)
 [![Author](https://img.shields.io/badge/author-@ThomasByr-blue)](https://github.com/ThomasByr)
 
