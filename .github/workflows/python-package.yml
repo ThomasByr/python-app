@@ -10,16 +10,18 @@ on:
     - cron: "45 8 * * 4"
 
 jobs:
-  build-linux:
-    runs-on: ubuntu-latest
+  build:
+    name: Package for ${{ matrix.os }} Python ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
-      max-parallel: 5
+      max-parallel: 4
       matrix:
-        python-version: ["3.10", "3.11"]
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.8", "3.9", "3.10", "3.11"]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
@@ -32,5 +34,5 @@ jobs:
       - name: hatch run dev:check
         run: |
           python -m pytest
-          python -m pylint src
-          python -m yapf -dr src
+          python -m ruff .
+          python -m black --check src
