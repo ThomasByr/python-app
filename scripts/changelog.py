@@ -61,7 +61,7 @@ def update(chg: List[str]) -> None:
 
   head = chg[0]
   index_of = head.find('#')
-  head = head[index_of::].strip('##')
+  head = head[index_of::].strip('##') # noqa
 
   details: List[str] = []
   details.append(f'  <summary> {head} (click here to expand) </summary>')

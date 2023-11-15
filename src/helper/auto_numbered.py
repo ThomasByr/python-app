@@ -1,10 +1,10 @@
 from enum import Enum
 
-__all__ = ['AutoNumberedEnum']
+__all__ = ["AutoNumberedEnum"]
 
 
 class AutoNumberedEnum(Enum):
-  """
+    """
   An enum that automatically assigns values to its members.\\
   Just inherit from this class instead of `Enum` and you're good to go.
 
@@ -24,38 +24,38 @@ class AutoNumberedEnum(Enum):
   ```
   """
 
-  def __new__(cls, *args) -> 'AutoNumberedEnum': # pylint: disable=unused-argument
-    """
-    Creates a new enum member.
+    def __new__(cls, *args) -> "AutoNumberedEnum":  # pylint: disable=unused-argument
+        """
+        Creates a new enum member.
 
-    ## Returns
-    ```py
-    object : AutoNumberedEnum
-    ```
-    """
-    value = len(cls.__members__) + 1
-    obj = object.__new__(cls)
-    obj._value_ = value
-    return obj
+        ## Returns
+        ```py
+        object : AutoNumberedEnum
+        ```
+        """
+        value = len(cls.__members__) + 1
+        obj = object.__new__(cls)
+        obj._value_ = value
+        return obj
 
-  def __repr__(self) -> str:
-    """
-    Returns the representation of this enum member.
+    def __repr__(self) -> str:
+        """
+        Returns the representation of this enum member.
 
-    ## Returns
-    ```py
-    str : str
-    ```
-    """
-    return f'<{self.__class__.__name__}.{self.name}: {self.value}>'
+        ## Returns
+        ```py
+        str : str
+        ```
+        """
+        return f"<{self.__class__.__name__}.{self.name}: {self.value}>"
 
-  def __str__(self) -> str:
-    """
-    Returns the string representation of this enum member.
+    def __str__(self) -> str:
+        """
+        Returns the string representation of this enum member.
 
-    ## Returns
-    ```py
-    str : str
-    ```
-    """
-    return f'{self.__class__.__name__}.{self.name}'
+        ## Returns
+        ```py
+        str : str
+        ```
+        """
+        return f"{self.__class__.__name__}.{self.name}"

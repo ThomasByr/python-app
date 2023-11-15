@@ -41,7 +41,5 @@ os.environ['DEBUG'] = 'False'
 if sys.version_info < (3, 11):
   raise RuntimeError('This program requires Python 3.11 or later')
 
-from src import *
-
 if __name__ == '__main__':
   ...
